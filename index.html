@@ -1,18 +1,81 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alastair J. A. Price | Computational Chemistry & AI</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; background: #f8f9fa; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { font-size: 2.2em; margin-bottom: 8px; color: #16213e; }
+        .subtitle { font-size: 1.1em; color: #546e7a; margin-bottom: 16px; }
+        .links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+        .links a { color: #0f4c75; text-decoration: none; font-weight: 500; }
+        .links a:hover { text-decoration: underline; }
+        .section { background: white; border-radius: 8px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .section h2 { font-size: 1.3em; margin-bottom: 12px; color: #16213e; border-bottom: 2px solid #e8e8e8; padding-bottom: 6px; }
+        .section p { margin-bottom: 10px; color: #37474f; }
+        .projects { list-style: none; }
+        .projects li { margin-bottom: 10px; }
+        .projects a { color: #0f4c75; font-weight: 600; }
+        .stats { display: flex; gap: 30px; justify-content: center; margin: 20px 0; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 1.8em; font-weight: 700; color: #0f4c75; }
+        .stat-label { font-size: 0.85em; color: #78909c; }
+        footer { text-align: center; color: #90a4ae; font-size: 0.85em; margin-top: 30px; }
+    </style>
 </head>
-
 <body>
+    <div class="container">
+        <header>
+            <h1>Alastair J. A. Price</h1>
+            <div class="subtitle">Postdoctoral Fellow | University of Toronto / Acceleration Consortium</div>
+            <div class="subtitle">Computational Chemistry &bull; Machine Learning &bull; AI-Driven Research</div>
+            <div class="links">
+                <a href="https://github.com/albdprice/cv">CV (PDF)</a>
+                <a href="https://scholar.google.com/citations?user=4zGRuLQAAAAJ">Google Scholar</a>
+                <a href="https://orcid.org/0000-0003-3239-8319">ORCID</a>
+                <a href="https://www.linkedin.com/in/alastair-price-6bba6611b/">LinkedIn</a>
+                <a href="https://github.com/albdprice">GitHub</a>
+            </div>
+            <div class="stats">
+                <div class="stat"><div class="stat-num">720+</div><div class="stat-label">Citations</div></div>
+                <div class="stat"><div class="stat-num">18</div><div class="stat-label">Publications</div></div>
+                <div class="stat"><div class="stat-num">14</div><div class="stat-label">h-index</div></div>
+                <div class="stat"><div class="stat-num">10</div><div class="stat-label">Invited Talks</div></div>
+            </div>
+        </header>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+        <div class="section">
+            <h2>Research Interests</h2>
+            <p>I develop and apply computational methods at the intersection of quantum chemistry, machine learning, and AI-driven materials science. My work focuses on:</p>
+            <p><strong>Density functional theory</strong> &mdash; Exchange-hole dipole moment (XDM) dispersion corrections, adaptive hybrid functionals, and method development within the FHI-aims and Psi4 software packages.</p>
+            <p><strong>Machine learning for molecular science</strong> &mdash; MACE neural network potentials, physics-informed adaptive parameter learning, and ML-accelerated molecular property prediction.</p>
+            <p><strong>AI-driven research</strong> &mdash; Agentic AI systems for drug discovery and materials chemistry, autonomous computational workflows, and MLOps for scientific computing.</p>
+        </div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+        <div class="section">
+            <h2>Selected Projects</h2>
+            <ul class="projects">
+                <li><a href="https://github.com/albdprice/psi4_xdm">psi4_xdm</a> &mdash; Exchange-hole dipole moment dispersion corrections in Psi4</li>
+                <li><a href="https://github.com/albdprice/molecular-ml-pipeline">molecular-ml-pipeline</a> &mdash; End-to-end MLOps for MACE molecular ML models</li>
+                <li><a href="https://github.com/albdprice/agentic-ai-demos">agentic-ai-demos</a> &mdash; Agentic AI for drug discovery and scientific research</li>
+                <li><a href="https://github.com/albdprice/nserc-latex-template">nserc-latex-template</a> &mdash; LaTeX template for NSERC Discovery Grant applications</li>
+            </ul>
+        </div>
 
+        <div class="section">
+            <h2>Recent Highlights</h2>
+            <p><strong>2025</strong> &mdash; D. Khan, A. J. A. Price et al. "Adaptive hybrid density functionals." <em>Science Advances</em> 11(5), eadt7769.</p>
+            <p><strong>2025</strong> &mdash; Invited seminars at Seoul National University, Fritz-Haber-Institut (Max Planck), University of Cambridge, National University of Singapore.</p>
+            <p><strong>2026</strong> &mdash; Collaborator on $10M NRF Singapore-UofT grant for ML design of complex materials.</p>
+        </div>
+
+        <footer>
+            Alastair J. A. Price &bull; alastairjprice@gmail.com
+        </footer>
+    </div>
 </body>
 </html>
